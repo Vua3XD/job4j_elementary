@@ -18,12 +18,17 @@ public class Converter {
         float dollar = Converter.rubleToDollar(120);
         System.out.println("140 rubles are " + dollar + " dollars.");
 
-        float in = 120;
-        float expected = 2;
-        float out = Converter.rubleToDollar(in);
-        boolean passed = expected == out;
-        System.out.println("120 rubles are 2. Test result : " + passed);
+        float inRubToDol = 120;
+        float expRubToDol = 2;
+        float outRubToDol = Converter.rubleToDollar(inRubToDol);
+        boolean pasRubToDol = expRubToDol == outRubToDol;
+        System.out.println("120 rubles are 2. Test result : " + pasRubToDol);
+
+        float inRubToEur = 140;
+        float expRubToEur = 2;
+        float outRubToEur = Converter.rubleToEuro(inRubToEur);
+        boolean pasRubToEur = expRubToEur == outRubToEur;
+        System.out.println("140 rubles are 2. Test result : " + pasRubToEur);
     }
 
 }
-
