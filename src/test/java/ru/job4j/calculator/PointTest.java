@@ -18,7 +18,7 @@ class PointTest {
     }
 
     @Test
-    void when03to20then2() {
+    void when03to20then3dot6() {
         double expected = 3.6;
         int x1 = 0;
         int y1 = 3;
