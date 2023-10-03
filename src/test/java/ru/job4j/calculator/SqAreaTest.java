@@ -22,6 +22,7 @@ class SqAreaTest {
         double out = SqArea.square(p, k);
         assertThat(out).isEqualTo(expected, withPrecision(0.1));
     }
+
     @Test
     void whenP7K5Square1dot7() {
         double expected = 1.7;
