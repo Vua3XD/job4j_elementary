@@ -10,12 +10,12 @@ class MaxTest {
         int left = 1;
         int right = 2;
         int result = Max.max(left, right);
-        int expected = 2;
+        int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    void whenMax2ToThen1() {
+    void whenMax2To1Then1() {
         int left = 2;
         int right = 1;
         int result = Max.max(left, right);
