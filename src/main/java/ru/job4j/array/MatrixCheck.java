@@ -5,11 +5,9 @@ public class MatrixCheck {
         boolean result = true;
         int col = 0;
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                if (board[row][col] != 'X') {
-                    result = false;
-                    break;
-                }
+            if (board[row][col] != 'X') {
+                result = false;
+                break;
             }
         }
         return result;
