@@ -23,4 +23,12 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] diag = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            diag[i] = board[i][i];
+        }
+        return diag;
+    }
 }
