@@ -1,33 +1,25 @@
 package ru.job4j.condition;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.core.Is.is;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
-class MaxTest {
+public class MaxTest {
     @Test
-    void whenMax1To2Then2() {
-        int left = 1;
-        int right = 2;
-        int result = Max.max(left, right);
-        int expected = 2;
-        assertThat(result).isEqualTo(expected);
+    public void whenMaxFromTwoNumbers() {
+        Max max = new Max();
+        assertThat(max.max(3, 5), is(5));
     }
 
     @Test
-    void whenMax2To1Then1() {
-        int left = 2;
-        int right = 1;
-        int result = Max.max(left, right);
-        int expected = 2;
-        assertThat(result).isEqualTo(expected);
+    public void whenMaxFromThreeNumbers() {
+        Max max = new Max();
+        assertThat(max.max(3, 5, 4), is(5));
     }
 
-    @Test void whenMax1Equal2Then1() {
-        int left = 2;
-        int right = 2;
-        int result = Max.max(left, right);
-        int expected = 2;
-        assertThat(result).isEqualTo(expected);
+    @Test
+    public void whenMaxFromFourNumbers() {
+        Max max = new Max();
+        assertThat(max.max(3, 5, 4, 8), is(8));
     }
 }
